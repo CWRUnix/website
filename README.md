@@ -23,21 +23,28 @@ Dependencies:
 ```
 pnpm podman netcat
 ```
-Setup and start:
+Setup environment (copy .env example and edit it):
+```
+cp .env.example .env
+```
+Install Node dependencies:
 ```
 pnpm install
-pnpm dev 
+```
+Start app:
+```
+pnpm dev
 ```
 Setup database:
 ```
 ./start-database.sh
 ```
+
+## Pre-commit checks
 Check code format:
 ```
 pnpm check
 ```
-
-## Pre-commit checks
 Fix code format:
 ```
 pnpm check:write
