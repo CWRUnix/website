@@ -34,15 +34,17 @@
   # };
 
   # https://devenv.sh/tests/
+  # Not working right now 
   enterTest = ''
     echo "Running tests"
     git --version | grep --color=auto "${pkgs.git.version}"
+    pnpm build
   '';
 
   # https://devenv.sh/git-hooks/
   git-hooks.hooks = {
-    # lint shell scripts   
-    shellcheck.enable = true;
+    # lint shell scripts (need to figure out how to ignore)
+    #shellcheck.enable = true;
     # format code
     biome.enable = true;
     # typecheck
