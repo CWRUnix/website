@@ -17,7 +17,7 @@
 # Dev Instructions
 Dependencies:
 ```
-pnpm podman
+pnpm podman netcat
 ```
 Setup and start:
 ```
@@ -27,4 +27,12 @@ pnpm dev
 Setup database:
 ```
 ./start-database.sh
+```
+Check code format:
+```
+pnpm check
+```
+Fix code format:
+```
+pnpm check:write
 ```
