@@ -14,7 +14,8 @@
   # processes.cargo-watch.exec = "cargo-watch";
 
   # https://devenv.sh/services/
-  services.postgres.enable = true;
+  # Does not seem to work :(
+  #services.postgres.enable = true;
  
   # https://devenv.sh/scripts/
   scripts.hello.exec = ''
