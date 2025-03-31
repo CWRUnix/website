@@ -12,7 +12,28 @@ export const metadata: Metadata = {
 function TopNav() {
 	return (
 		<nav className="flex w-full items-center justify-between border-b p-4 font-semibold text-xl">
-			<div>Home</div>
+			<div>
+				<img
+					src={"/CWRU_Linux_Club_horizontal_transparent.svg"}
+					alt={"cwru linux club logo"}
+					style={{ filter: "invert(1)" }}
+					className="h-12 w-auto"
+				/>
+			</div>
+
+			<div>
+				<a
+					href={"https://discord.gg/y8qm7YUW5F"}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src={"/Discord-Logo-White.png"}
+						alt="Discord link"
+						className="h-6 w-auto"
+					/>
+				</a>
+			</div>
 
 			<div>Sign In</div>
 		</nav>

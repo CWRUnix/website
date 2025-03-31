@@ -36,3 +36,7 @@ Fix code format:
 ```
 pnpm check:write
 ```
+Run typecheck:
+```
+pnpm tsc --noEmit
+```
