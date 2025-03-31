@@ -13,6 +13,10 @@
 - [ ] Delete button (w/ Server Actions)
 - [ ] Ratelimiting (upstash)
 - [ ] Devenv support
+    - [x] Initial setup
+    - [x] Pre-commit checks
+    - [ ] Dependency management
+    - [ ] Build/Test
 
 ## Dev Instructions
 Dependencies:
