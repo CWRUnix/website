@@ -1,4 +1,4 @@
-# CWRUNix Website
+# CWRUnix Website
 
 ## TODO
 
