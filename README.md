@@ -14,7 +14,7 @@
 - [ ] Ratelimiting (upstash)
 - [ ] Devenv support
 
-# Dev Instructions
+## Dev Instructions
 Dependencies:
 ```
 pnpm podman netcat
@@ -32,6 +32,8 @@ Check code format:
 ```
 pnpm check
 ```
+
+## Pre-commit checks
 Fix code format:
 ```
 pnpm check:write
