@@ -22,5 +22,6 @@
 			},
 			"recommended": true
 		}
-	}
+	},
+	"extends": ["@nedcloarbr/biome-config/react"]
 }
