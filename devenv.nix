@@ -39,7 +39,21 @@
   # Launches on `devenv up`
   # https://devenv.sh/processes/
   processes = {
-    website.exec = "pnpm build && pnpx serve out";
+    serve-website = {
+      exec = "pnpm install && pnpm build && pnpx serve out";
+      process-compose = {
+        depends_on.postgres.condition = "process_healthy";
+        readiness_probe = {
+          http_get = {
+            host = "localhost";
+            scheme = "http";
+            path = "/";
+            port = 3000;
+          };
+          initial_delay_seconds = 1;
+        };
+      };
+    };
   };
 
   # Launches in the background on `devenv up`
